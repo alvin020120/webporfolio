@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sono", sans-serif;
+}
+
+.nav-link:hover {
+  color: #e9d8a6 !important;
+}
+
+body {
+  background-color: #0a9396;
+}
+
+.greet-hi {
+  color: #e9d8a6;
+}
+.logo {
+  height: 80px;
+  /* color: #80ced7; */
+}
+
+/* .navbar {
+  background-color: #28afb0;
+} */
+
+h1.my-name {
+  font-size: 40px;
+}
+
+@media screen and (min-width: 821px) {
+  h1.my-name {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 391px) {
+  h1.my-name {
+    font-size: 60px;
+  }
+}
