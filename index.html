@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="index.css" />
     <title>ATA Porfolio</title>
   </head>
@@ -62,13 +63,37 @@
           id="land"
         >
           <div class="w-md-75 offset-md-1 my-statement">
-            <h5 class="font-weight-bold greet-hi greet-hi">Hey, my name is</h5>
-            <h1 class="font-weight-bold my-name">Alvin Almadrones.</h1>
-            <h2 class="font-weight-bold passion-text">
+            <h5
+              class="font-weight-bold greet-hi greet-hi"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
+              Hey, my name is
+            </h5>
+            <h1
+              class="font-weight-bold my-name"
+              data-aos="fade-right"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
+              Alvin Almadrones.
+            </h1>
+            <h2
+              class="font-weight-bold passion-text"
+              data-aos="fade-left"
+              data-aos-delay="1500"
+              data-aos-duration="1000"
+            >
               I build websites that work for you.
             </h2>
 
-            <p class="mt-3 col-lg-8 add-info p-0">
+            <p
+              class="mt-3 col-lg-8 add-info p-0"
+              data-aos="flip-up"
+              data-aos-delay="2000"
+              data-aos-duration="1000"
+            >
               I'm working in the government for 7 years and creating excel-based
               programs to improve some processes. Now, I'm focusing in creating
               web applications which more robust and flexible.
@@ -84,11 +109,22 @@
             <p class="mp-head mb-5">My Projects</p>
             <!-- Start of Carousel -->
             <div class="row mb-md-5">
-              <div class="col-md-7 img-proj">
+              <div
+                class="col-md-7 img-proj"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="1000"
+              >
                 <p class="font-weight-bold">Feature Project</p>
                 <img src="images/P-1.png" alt="" class="img-fluid" />
               </div>
-              <div class="col-md-5 text-right text-proj">
+
+              <div
+                class="col-md-5 text-right text-proj"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="1000"
+              >
                 <h4 class="pb-2 pt-2">Document Management System</h4>
                 <p class="p-3 p-desc">
                   Draft, review and approve documents. Track and ensures
@@ -106,7 +142,12 @@
             </div>
 
             <div class="row mt-5 pt-5">
-              <div class="col-md-5 text-left text-proj order-2 order-md-1">
+              <div
+                class="col-md-5 text-left text-proj order-2 order-md-1"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="1000"
+              >
                 <h4 class="pt-2 pb-2">Project Profile App</h4>
                 <p class="p-3 p-desc">
                   Manage, update and track invesment and accomplishment for
@@ -121,7 +162,12 @@
                   value="Visit"
                 />
               </div>
-              <div class="col-md-7 img-proj order-1 order-md-2">
+              <div
+                class="col-md-7 img-proj order-1 order-md-2"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="1000"
+              >
                 <p class="font-weight-bold">Feature Project</p>
                 <img src="images/P-2.PNG" alt="" class="img-fluid" />
               </div>
@@ -136,7 +182,9 @@
 
             <div class="row mt-md-5">
               <!-- contact me start -->
-              <div class="col-lg-6 mt-5">
+              <div class="col-lg-6 mt-5" data-aos="fade-left"
+              data-aos-delay="500"
+              data-aos-duration="2000>
                 <h5 class="font-weight-bold mb-3">Message Me</h5>
                 <form>
                   <div class="form-group">
@@ -233,7 +281,9 @@
 
               <!-- map start -->
 
-              <div class="col-lg-6 mt-5">
+              <div class="col-lg-6 mt-5" data-aos="fade-right"
+              data-aos-delay="1000"
+              data-aos-duration="2000>
                 <h5 class="font-weight-bold mb-3">Find Me</h5>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.195399878562!2d120.97006181440618!3d14.587938889810577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca3fc0000001%3A0xba30bc91fca862fc!2sDPWH%20Central%20Office%20Multi-Purpose%20Coop!5e0!3m2!1sen!2sph!4v1669276788359!5m2!1sen!2sph"
@@ -290,5 +340,9 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
