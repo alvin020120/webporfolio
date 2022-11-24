@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Open+Sans:ital,wght@1,300&family=Sono:wght@200;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
@@ -21,8 +21,8 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="ml-md-5 mr-md-5">
-        <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="ml-lg-5 mr-lg-5">
+        <nav class="navbar navbar-expand-lg navbar-light nav-me">
           <img
             class="navbar-brand img-fluid logo"
             src="images/ATA_logo.png"
@@ -43,32 +43,243 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto font-weight-bold">
               <li class="nav-item">
-                <a class="nav-link" href="#"
+                <a class="nav-link" href="#land"
                   >About Me <span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#myproject">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
+                <a class="nav-link" href="#contact-me">Contact Me</a>
               </li>
             </ul>
           </div>
         </nav>
 
-        <div class="p-3 p-md-5 mt-5 mr-lg-5 col-lg-11">
-          <div class="w-md-75 offset-md-1">
-            <h5 class="font-weight-bold greet-hi">Hi, I'm</h5>
-            <h1 class="font-weight-bold my-name">Alvin T. Almadrones</h1>
+        <div
+          class="p-2 p-md-5 mt-5 col-lg-10 landing mb-5 d-inline-block"
+          id="land"
+        >
+          <div class="w-md-75 offset-md-1 my-statement">
+            <h5 class="font-weight-bold greet-hi greet-hi">Hey, my name is</h5>
+            <h1 class="font-weight-bold my-name">Alvin Almadrones.</h1>
             <h2 class="font-weight-bold passion-text">
-              Creating programs for more effective service delivery is my
-              passion.
+              I build websites that work for you.
             </h2>
+
+            <p class="mt-3 col-lg-8 add-info p-0">
+              I'm working in the government for 7 years and creating excel-based
+              programs to improve some processes. Now, I'm focusing in creating
+              web applications which more robust and flexible.
+            </p>
+          </div>
+          <!-- <div class="my-logo d-none d-xl-flex">
+            <img src="images/my-logo-2.png" alt="ATA_logo" class="img-fluid" />
+          </div> -->
+        </div>
+
+        <div class="min-vh-100 p-2 p-md-5 mt-5 col-lg-11 mb-5" id="myproject">
+          <div class="offset-md-1">
+            <p class="mp-head mb-5">My Projects</p>
+            <!-- Start of Carousel -->
+            <div class="row mb-md-5">
+              <div class="col-md-7 img-proj">
+                <p class="font-weight-bold">Feature Project</p>
+                <img src="images/P-1.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col-md-5 text-right text-proj">
+                <h4 class="pb-2 pt-2">Document Management System</h4>
+                <p class="p-3 p-desc">
+                  Draft, review and approve documents. Track and ensures
+                  compliance. Management reporting. Organizes documents for easy
+                  retrieval.
+                </p>
+                <input
+                  type="button"
+                  class="visit-button"
+                  onClick="parent.open('dms.html')"
+                  target="_blank"
+                  value="Visit"
+                />
+              </div>
+            </div>
+
+            <div class="row mt-5 pt-5">
+              <div class="col-md-5 text-left text-proj order-2 order-md-1">
+                <h4 class="pt-2 pb-2">Project Profile App</h4>
+                <p class="p-3 p-desc">
+                  Manage, update and track invesment and accomplishment for
+                  Multi-Year projects.
+                </p>
+
+                <input
+                  type="button"
+                  class="visit-button"
+                  onClick="parent.open('dms.html')"
+                  target="_blank"
+                  value="Visit"
+                />
+              </div>
+              <div class="col-md-7 img-proj order-1 order-md-2">
+                <p class="font-weight-bold">Feature Project</p>
+                <img src="images/P-2.PNG" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="row col-lg-6" id="contact-me""> -->
+        <div class="min-vh-100 p-2 p-md-5 mt-5 col-lg-11 mb-5" id="contact-me">
+          <div class="offset-md-1">
+            <p class="mp-head">Contact Me</p>
+
+            <div class="row mt-md-5">
+              <!-- contact me start -->
+              <div class="col-lg-6 mt-5">
+                <h5 class="font-weight-bold mb-3">Message Me</h5>
+                <form>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="formGroupExampleInput"
+                      placeholder="Your Name"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="name@example.com"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="formGroupPNumber">Contact Number</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="formGroupPNumber"
+                      pattern="[+]{2}[0-9]{11,14}"
+                      placeholder="+63 900 000 0000"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="formGroupMessage">Message</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="formGroupMessage"
+                      style="height: 100px"
+                    />
+                  </div>
+
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-toggle="modal"
+                    data-target="#staticBackdrop"
+                  >
+                    Submit
+                  </button>
+
+                  <div
+                    class="modal fade text-dark"
+                    id="staticBackdrop"
+                    data-backdrop="static"
+                    data-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">
+                            Thank you for contacting us!
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">Message Successfully Sent</div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- contact me end -->
+
+              <!-- map start -->
+
+              <div class="col-lg-6 mt-5">
+                <h5 class="font-weight-bold mb-3">Find Me</h5>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.195399878562!2d120.97006181440618!3d14.587938889810577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca3fc0000001%3A0xba30bc91fca862fc!2sDPWH%20Central%20Office%20Multi-Purpose%20Coop!5e0!3m2!1sen!2sph!4v1669276788359!5m2!1sen!2sph"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <!-- map end -->
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div
+        class="container-fluid d-flex justify-content-center mt-5 mb-2 text-center"
+      >
+        <div class="d-inline-block col-6 row">
+          <a href="https://web.facebook.com/" target="_blank"
+            ><img
+              src="images/facebook-logo.png"
+              alt="facebook-logo"
+              class="img-fluid soc-med mr-2 ml-2"
+          /></a>
+
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              src="images/instagram.png"
+              alt="instagram"
+              class="img-fluid soc-med mr-2 ml-2"
+          /></a>
+
+          <a href="https://ph.linkedin.com/" target="_blank"
+            ><img
+              src="images/linkedin.png"
+              alt="linkedin"
+              class="img-fluid soc-med mr-2 ml-2"
+          /></a>
+        </div>
+      </div>
+      <p class="text-center footer-me">Designed by Alvin Almadrones</p>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
